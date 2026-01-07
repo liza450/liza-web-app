@@ -1,2 +1,19 @@
-FROM nginx:alpine
-COPY index.html /usr/share/nginx/html/index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liza's Web App</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; background-color: #f4f4f4; padding: 50px; }
+        .container { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h1 { color: #ff6600; }
+        p { color: #333; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Liza's Web App is Live! 🚀</h1>
+        <p>This app was deployed successfully using <b>GitHub Actions</b> and <b>AWS ECR</b>.</p>
+        <p>Status: <span style="color: green;">✔ All Systems Go</span></p>
+    </div>
+</body>
+</html>
